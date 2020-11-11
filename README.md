@@ -14,6 +14,7 @@ Build steps:
 * Download installation media (iso), license, and key 
 * Clone this repo
 * Mount ISO
+* Create `network.lic`
 * Build image
 
 ### Note on licenses
@@ -43,6 +44,9 @@ sudo mount -o loop /<path-to-iso>/RYYYYx_Linux.iso ./matlab-install/
 ```
 
 Where `YYYYx` is `2019b`, `2020a`, etc.
+
+###
+Create file `network.lic` for site where image will be deployed. 
 
 ### Build the image
 
