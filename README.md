@@ -54,11 +54,10 @@ In addition to the 20GB ISO, building the image requires at least 40GB
 of disk space:
 
 ```
-docker build -t registry.local.wholetale.org/matlab-install:R2019b .
+docker build -t matlab-install:R2019b .
 ```
 
-For production installations, push the image to the local registry:
-```
-docker push registry.wholetale.org/matlab-install:R2019b
-```
+Note: For now, I assume that the image will be imported to the local
+VM cache via `docker import`. In the future, we may decide to push
+the install images to registry.wholetale.org.
 
